@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok 이벤트 바로가기</title>
+  <script>
+    window.onload = function() {
+      // ① TikTok 앱 딥링크 실행
+      window.location.href = "snssdk1180://webview?url=https%3A%2F%2Flite.tiktok.com%2Ft%2FZSAMv83D6%2F";
+      
+      // ② 앱이 없으면 2초 뒤 웹버전 열기
+      setTimeout(function() {
+        window.location.href = "https://lite.tiktok.com/t/ZSAMv83D6/";
+      }, 2000);
+    };
+  </script>
+</head>
+<body>
+  <p>잠시만 기다리세요... TikTok 앱으로 이동 중입니다.</p>
+</body>
+</html>
